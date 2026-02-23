@@ -73,8 +73,7 @@ class PocketCombats:
             "text": text
         }
         return self.session.post(
-            f"{self.api}/api/chat/send",
-            data=data).json()
+            f"{self.api}/api/chat/send", data=data).json()
 
     def get_equipment(self) -> dict:
         return self.session.get(
